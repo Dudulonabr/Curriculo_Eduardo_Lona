@@ -735,6 +735,21 @@ main {
   border-radius: 999px;
 }
 
+.course-badge.completed {
+  color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.15);
+}
+
+.course-card.completed {
+  border-color: rgba(0, 212, 255, 0.2);
+}
+
+.courses-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .course-card h4 {
   font-size: 1rem;
   font-weight: 600;
@@ -928,6 +943,110 @@ main {
   font-size: 0.95rem;
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.modal-certificado {
+  max-width: 900px;
+}
+
+.modal-certificado-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 200px;
+}
+
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration) var(--ease-out);
+  font-family: var(--font-sans);
+}
+
+.certificate-item:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.06);
+  transform: translateX(4px);
+}
+
+.certificate-item:focus {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+.certificate-item-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.certificate-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.certificate-item-info strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.certificate-item-info span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.certificate-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certificate-back {
+  align-self: flex-start;
+  padding: 0.4rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.certificate-back:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(0, 212, 255, 0.08);
+}
+
+#certificate-iframe {
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.certificate-download {
+  align-self: center;
+  text-decoration: none;
 }
 
 .languages-list {

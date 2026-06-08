@@ -147,7 +147,8 @@
       <div class="container">
         <h2 class="section-title"><span class="section-icon">📖</span> Cursos complementares</h2>
         <div class="courses-grid">
-          <div class="course-card">
+          <div class="course-card completed">
+            <span class="course-badge completed">Concluído</span>
             <h4>Criação de Jogos Digitais</h4>
             <p>Fundamentos de game design, lógica aplicada a jogos, conceitos básicos de programação voltada para jogos e uso de ferramentas visuais.</p>
           </div>
@@ -160,6 +161,9 @@
             <h4>Cursos Danki Code</h4>
             <p>Desenvolvimento web, fundamentos de front-end, back-end e boas práticas de programação, estudados de forma gradual para aprimoramento contínuo.</p>
           </div>
+        </div>
+        <div class="courses-actions">
+          <button type="button" class="btn btn-ghost" id="btn-certificados">Ver certificados</button>
         </div>
       </div>
     </section>
@@ -237,6 +241,38 @@
         <button type="button" class="modal-close" aria-label="Fechar">&times;</button>
       </div>
       <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-certificado" aria-hidden="true" aria-labelledby="modal-certificado-title">
+    <div class="modal modal-certificado" role="dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-certificado-title">Certificados</h3>
+        <button type="button" class="modal-close modal-certificado-close" aria-label="Fechar">&times;</button>
+      </div>
+      <div class="modal-body modal-certificado-body">
+        <div class="certificates-list" id="certificates-list">
+          <button type="button" class="certificate-item" data-cert="certificados/criacao-jogos-digitais.pdf" data-title="Criação de Jogos Digitais">
+            <span class="certificate-item-icon" aria-hidden="true">📜</span>
+            <span class="certificate-item-info">
+              <strong>Criação de Jogos Digitais</strong>
+              <span>Certificado de conclusão</span>
+            </span>
+          </button>
+          <button type="button" class="certificate-item" data-cert="certificados/front-end-danki-code.pdf" data-title="Front-End Completo 2.0 — Danki Code">
+            <span class="certificate-item-icon" aria-hidden="true">📜</span>
+            <span class="certificate-item-info">
+              <strong>Front-End Completo 2.0</strong>
+              <span>Danki Code · 9 horas</span>
+            </span>
+          </button>
+        </div>
+        <div class="certificate-viewer" id="certificate-viewer" hidden>
+          <button type="button" class="certificate-back" id="certificate-back">← Voltar à lista</button>
+          <iframe id="certificate-iframe" title="Visualização do certificado" src="about:blank"></iframe>
+          <a class="btn btn-primary certificate-download" id="certificate-download" href="#" target="_blank" rel="noopener">Abrir em nova aba</a>
+        </div>
+      </div>
     </div>
   </div>
 
