@@ -1,52 +1,50 @@
+<p align="center"><img src="docs/assets/banner.svg" alt="Currículo Web — Formação, experiência prática e competências em TI" width="100%" /></p>
+
+<p align="center"><strong>HTML · CSS · JavaScript · Apresentação profissional</strong></p>
+<p align="center"><a href="#sobre">Sobre</a> · <a href="#como-executar">Como executar</a> · <a href="https://github.com/Dudulonabr">Perfil do autor</a></p>
+
 # Currículo Web — Eduardo Lona
 
-Versão web e interativa do meu currículo profissional, criada para apresentar formação, experiência, projetos e habilidades de maneira moderna e organizada.
+## Sobre
 
-## Objetivo
+Versão web do meu currículo, desenvolvida para apresentar formação, experiência prática, projetos e competências de maneira clara. Complementa minha candidatura a oportunidades de estágio e posições iniciais em tecnologia.
 
-O projeto funciona como uma apresentação profissional complementar para oportunidades de estágio e posições iniciais em tecnologia.
+## Conteúdo e recursos
 
-## Tecnologias
+- Objetivo e resumo profissional.
+- Formação em ADS, Engenharia de Software e Técnico em Informática.
+- Experiência prática com suporte, hardware e manutenção.
+- Projeto Futuro das Cidades e cursos complementares.
+- Competências técnicas e comportamentais.
+- Certificados em PDF, navegação por seções e elementos interativos.
 
-- HTML5
-- CSS3
-- JavaScript
+## Como executar
 
-## Principais seções
-
-- Objetivo profissional
-- Resumo profissional
-- Formação acadêmica
-- Experiência
-- Projetos
-- Cursos complementares
-- Habilidades técnicas
-- Competências comportamentais
-- Idiomas e contato
-
-## Estrutura
-
-```text
-Curriculo_Eduardo_Lona/
-├── certificados/
-├── index.html
-├── script.js
-└── styles.css
+```bash
+git clone https://github.com/Dudulonabr/Curriculo_Eduardo_Lona.git
+cd Curriculo_Eduardo_Lona
+python -m http.server 8000
 ```
 
-## Como visualizar
+Abra **http://localhost:8000**. Também é possível abrir `index.html` diretamente no navegador. Não há instalação de dependências ou build obrigatório; fontes externas podem depender de internet.
 
-Abra o arquivo `index.html` em um navegador. Para desenvolvimento local, também é possível utilizar um servidor como o Live Server.
+## Organização
 
-## Diferenciais
+| Caminho | Conteúdo |
+| --- | --- |
+| `index.html` | Estrutura e informações do currículo |
+| `styles.css` | Estilos e adaptação a diferentes telas |
+| `script.js` | Interatividade da interface |
+| `certificados/` | Certificados disponibilizados em PDF |
 
-- Interface responsiva
-- Navegação por seções
-- Elementos interativos em JavaScript
-- Área dedicada a certificados
-- Organização visual voltada à leitura profissional
+## Aprendizados demonstrados
+
+Desenvolvimento de páginas estáticas, organização de informações profissionais, CSS responsivo, navegação e manipulação do DOM com JavaScript.
 
 ## Autor
 
-**Eduardo Lona**  
-Estudante de Análise e Desenvolvimento de Sistemas e Engenharia de Software.
+**Eduardo Moreira Monteiro Lona** · São Paulo, Brasil
+
+Estudante de **Análise e Desenvolvimento de Sistemas (UNIP)** e **Engenharia de Software (Cruzeiro do Sul)**, com formação técnica em **Informática pelo SENAC**.
+
+[LinkedIn](https://www.linkedin.com/in/eduardo-moreira-monteiro-lona) · [E-mail](mailto:dudulona07@gmail.com) · [GitHub](https://github.com/Dudulonabr)
